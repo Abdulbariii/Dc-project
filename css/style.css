@@ -1,0 +1,2253 @@
+/*primary color #0476F2 blue*/
+/*white color #EEEEEE and #F8F8F8*/
+/*dark color #252525 and #000000*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#home {
+  background-image: linear-gradient(#161010, #000000);
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-btn {
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  border-radius: 50%;
+  top: 6rem;
+  right: 6rem;
+  background-color: #0476f2;
+  z-index: 1000;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.705);
+
+  animation: nav-back 0.5s;
+}
+
+.nav-background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#252525, #000000);
+  transition: transform 0.8s;
+  z-index: 500;
+}
+
+.nav {
+  text-transform: uppercase;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 700;
+  display: none;
+
+  transition: opacity 0.8s;
+
+  animation: nav-back 2s;
+}
+
+.nav-list {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  margin-left: 13rem;
+  margin-top: 7rem;
+}
+
+.nav-item {
+  margin: 1rem;
+}
+
+.nav-link:visited,
+.nav-link:link {
+  display: inline-block;
+  text-decoration: none;
+  color: #0476f2;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #252525 50%
+  );
+  background-size: 220%;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.nav-span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-position: 100%;
+  transform: translateX(1rem);
+  color: #eeeeee;
+}
+
+.nav-icon {
+  position: relative;
+  margin-top: 3.3rem;
+  transition: all 0.2s;
+}
+
+.nav-icon,
+.nav-icon::before,
+.nav-icon::after {
+  height: 0.2rem;
+  width: 3rem;
+  background-color: #252525;
+  display: inline-block;
+}
+
+.nav-icon::after,
+.nav-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.nav-icon {
+}
+
+.nav-icon::before {
+  top: 1.2rem;
+}
+
+.nav-icon::after {
+  top: -1.2rem;
+}
+
+.nav-btn:hover .nav-icon::before {
+  top: 0.8rem;
+}
+
+.nav-btn:hover .nav-icon::after {
+  top: -0.8rem;
+}
+
+.nav-checkbox:checked + .nav-btn .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked + .nav-btn .nav-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.nav-checkbox:checked + .nav-btn .nav-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.nav-checkbox:checked ~ .nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-checkbox:checked ~ .nav-background {
+  transform: scale(55);
+}
+
+.addScale {
+  transform: scale(0);
+}
+
+.background-container {
+  height: 100vh;
+}
+
+.background-container-top {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.background-container-top :hover {
+  transform: scale(1.1);
+}
+
+.background-container-bottom {
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+}
+
+.img-top {
+  width: 40%;
+  margin-top: 1rem;
+
+  overflow: hidden;
+}
+
+.img-top-4 {
+  position: relative;
+}
+
+.Header-1 {
+  position: absolute;
+  color: #000000;
+  top: 15rem;
+  left: 2rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  z-index: 10;
+}
+
+.Header-2 {
+  color: #252525;
+  margin-left: 42%;
+  position: absolute;
+  margin-top: 380px;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  z-index: 8;
+}
+
+.img-top-2 {
+  width: 50%;
+  overflow: hidden;
+  transition: all 0.3s;
+  object-fit: cover;
+  object-position: top left;
+  transform-origin: left bottom;
+}
+
+.img-top-2:hover {
+  transform: scale(1.1);
+}
+
+.Header-4 {
+  color: #ffffff;
+
+  position: absolute;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  left: 0;
+  bottom: 2rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  background-image: linear-gradient(#252525, #252525);
+  z-index: 10;
+}
+
+.hbo {
+  color: rgb(132, 0, 255);
+}
+
+.Header-3 {
+  color: #eeeeee;
+  margin-left: 67%;
+  position: absolute;
+  margin-top: 50rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  background-image: linear-gradient(#252525, #252525);
+  z-index: 5;
+}
+
+.img-top-1 {
+  overflow: hidden;
+  transition: all 0.4s;
+  z-index: 22;
+  object-fit: cover;
+  object-position: top right;
+  transform-origin: right;
+}
+
+/*   font-family: 'Source Sans Pro', sans-serif;*/
+.img-top-text-1 {
+  position: absolute;
+
+  top: 31.2rem;
+  left: 0.01rem;
+  color: #ff0000;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  z-index: 100;
+  padding: 0.5rem;
+
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(#252525, #252525);
+}
+
+.img-top-1:hover {
+  transform: scale(1.1);
+}
+
+.div-top {
+}
+
+.div-bottom {
+}
+
+.img-bottom {
+  width: 65%;
+  height: 35vh;
+  background-size: cover;
+}
+
+.img-top-4 {
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+  transition: all 0.4s;
+  z-index: 6;
+  transform-origin: top right;
+}
+
+.img-top-4:hover {
+  transform: scale(1.1);
+}
+
+.img-top-5 {
+  object-fit: cover;
+  object-position: right top;
+  width: 33%;
+  overflow: hidden;
+  transition: all 0.4s;
+  z-index: 8;
+  transform-origin: top left;
+}
+
+.img-top-5:hover {
+  transform: scale(1.05);
+}
+
+#Movies {
+  height: 200vh;
+  width: 100%;
+
+  background-image: linear-gradient(to top left, #000000ee, #000000f6),
+    url(../img/batDC.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.header-movies {
+  text-align: center;
+}
+
+.header-movies-text {
+  font-size: 5rem;
+  color: #0476f2;
+  display: inline-block;
+  text-align: center;
+  font-family: "Anek Bangla", sans-serif;
+  position: relative;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.header-movies-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  height: 0.5rem;
+  background-color: #0476f2;
+
+  width: 100%;
+  transform: scaleX(0);
+  z-index: 1;
+  opacity: 1;
+  transition: transform 0.2s ease-in;
+  transform-origin: right;
+}
+
+.header-movies-text:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+.header-movies-1 {
+  color: #06ff00;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  margin-left: 5rem;
+  margin-top: 3.5rem;
+
+  padding: 0.5rem;
+
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(#252525, #252525);
+}
+
+.header-movies-2 {
+  color: #ffe300;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  margin-left: 50rem;
+  margin-top: 3.5rem;
+
+  padding: 0.5rem;
+
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(#252525, #252525);
+}
+
+.up-coming-movies {
+  width: 40%;
+  color: #eeeeee;
+  padding-top: 2rem;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  border: 1px solid #000000;
+}
+
+.movies-row-1 {
+  background-image: linear-gradient(to right bottom, #252525fa, #0000005d),
+    url(../img/MV5BOWNhMGU5MjEtMGVkYi00M2RiLWE5NjUtY2U5NDAxZTcwNDY0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  overflow: hidden;
+  transition: all 0.4s;
+  transform-origin: bottom left;
+  border: 0.01rem solid #000000;
+}
+
+.movies-row-1:hover {
+  transform: scale(1.1);
+}
+
+.movies-row-2 {
+  background-image: linear-gradient(to right bottom, #252525fa, #0000005d),
+    url(../img/black-adam.jpeg);
+  background-size: cover;
+  background-position: 50%;
+
+  overflow: hidden;
+  transition: all 0.4s;
+  transform-origin: bottom left;
+}
+
+.movies-row-2:hover {
+  transform: scale(1.1);
+}
+
+.movies-row-3 {
+  background-image: linear-gradient(to right bottom, #252525fa, #0000005d),
+    url(../img/ShazamBg.png);
+  background-size: cover;
+  background-position: 50%;
+
+  overflow: hidden;
+  transition: all 0.4s;
+  transform-origin: bottom left;
+}
+
+.movies-row-3:hover {
+  transform: scale(1.1);
+}
+
+.movies-row-4 {
+  background-image: linear-gradient(to right bottom, #252525fa, #0000005d),
+    url(../img/BatgirlBg.jpg);
+  background-size: cover;
+
+  background-position: 70%;
+
+  transition: all 0.4s;
+  transform-origin: bottom left;
+}
+
+.movies-row-4:hover {
+  transform: scale(1.1);
+}
+
+.item-movies-logo {
+}
+
+.item-movies {
+  padding: 1rem;
+  border-collapse: separate;
+  border-spacing: 50px 0;
+
+  color: #eeeeee;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  padding-right: 3rem;
+}
+
+.flash-logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.flashLogo {
+  width: 11rem;
+  height: 7rem;
+}
+
+.blackAdam-logo {
+  width: 11rem;
+  height: 6rem;
+}
+
+.shazam-logo {
+  width: 3rem;
+  height: 6rem;
+}
+
+.batgirl-logo {
+  width: 10rem;
+  height: 7rem;
+}
+
+.top-rate-movies {
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 1.5rem 0px;
+}
+
+.row-top-rate {
+  position: absolute;
+  left: 45%;
+  top: 33.4rem;
+}
+
+.row-rate {
+  width: 15rem;
+  height: 40rem;
+  padding: 3rem;
+  border-spacing: 5rem2rem;
+  color: #0476f2;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  padding-right: 3rem;
+  border: 0.01rem solid #000000;
+}
+
+.row-rate:nth-child(1) {
+}
+
+.top-rate-col-1 {
+  background-image: linear-gradient(to top left, #25252552, #00000000),
+    url(../img/the-dark-knight-aftermath-4k-yk.jpg);
+  background-size: cover;
+  background-position: bottom left;
+  position: relative;
+  transition: transform, 0.4s;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.top-rate-col-1:hover {
+  transform: scale(1.1);
+  transform-origin: top right;
+}
+
+.top-rate-col-2 {
+  background-image: linear-gradient(#2525254e, #00000000),
+    url(../img/watchmen-watchmen-movie-dr-manhattan-rorschach-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: bottom left;
+  position: relative;
+  transition: transform, 0.4s;
+
+  overflow: hidden;
+}
+
+.top-rate-col-2:hover {
+  transform: scale(1.1);
+}
+
+.top-rate-col-3 {
+  background-image: linear-gradient(to top right, #2525252a, #00000000),
+    url(../img/The-Suicide-Squad-Wallpaper.jpg);
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+  transition: transform, 0.4s;
+  transform-origin: top right;
+  overflow: hidden;
+}
+
+.top-rate-col-3:hover {
+  transform: scale(1.1);
+  transform-origin: top left;
+}
+
+.header-col {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 100;
+  background-image: linear-gradient(to bottom left, #25252551, #252525);
+  height: 19%;
+  color: #eeeeee;
+  display: inline-block;
+  width: 100%;
+  transition: all 0.4s;
+  transform-origin: bottom left;
+  padding-top: 0.5rem;
+}
+
+.header-col-1 {
+  bottom: -3rem;
+  left: 0px;
+  transform: scale(1);
+}
+
+.top-rate-col-1:hover .header-col-1 {
+  transform: scale(1);
+  bottom: 0px;
+  height: 100%;
+}
+
+.header-col-2 {
+  bottom: -3rem;
+  left: 0px;
+  transform: scale(1);
+}
+
+.top-rate-col-2:hover .header-col-2 {
+  transform: scale(1);
+  bottom: 0px;
+  height: 100%;
+}
+
+.header-col-3 {
+  bottom: -3rem;
+  left: 0px;
+  transform: scale(1);
+}
+
+.top-rate-col-3:hover .header-col-3 {
+  transform: scale(1);
+  bottom: 0px;
+  height: 100%;
+}
+
+.rate {
+  color: #ffe300;
+  font-weight: 700;
+  font-family: "Anek Bangla", sans-serif;
+  padding-top: 2rem;
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.rate-text {
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+  width: 80%;
+  height: 18rem;
+  overflow: hidden;
+  text-align: left;
+  display: inline-block;
+  padding-top: 3rem;
+}
+
+.imdb {
+  height: 3rem;
+  width: 6rem;
+  padding-right: 1rem;
+}
+
+.show-now {
+  position: relative;
+}
+
+.header-movies-3 {
+  color: #ff0000;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+
+  position: absolute;
+  top: 3rem;
+  left: 10rem;
+
+  padding: 0.5rem;
+
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(#252525, #252525);
+}
+
+.show-now-card {
+  width: 30rem;
+  height: 40rem;
+  background-image: linear-gradient(to top left, #2525252a, #00000070),
+    url(../img/TheBatmanShow.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  left: 10rem;
+  top: 13rem;
+  box-shadow: 0 2px 2px #000000a7;
+}
+
+.show-now-text {
+  font-size: 5rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  position: absolute;
+  left: 43rem;
+  top: 13rem;
+}
+
+.show-now-p1 {
+  position: absolute;
+  right: 10rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 1.5rem;
+  width: 30rem;
+  left: 43rem;
+  top: 28rem;
+}
+
+.show-now-p2 {
+  position: absolute;
+  right: 10rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 1.5rem;
+  width: 30rem;
+  left: 43rem;
+  top: 36rem;
+}
+
+.show-now-p3 {
+  position: absolute;
+  right: 10rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 1.5rem;
+  width: 30rem;
+  left: 43rem;
+  top: 39rem;
+}
+
+.The {
+  font-size: 3rem;
+}
+
+.ticket-btn {
+  color: #eeeeee;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+
+  position: absolute;
+  top: 46rem;
+  left: 43rem;
+
+  padding: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(#252525, #252525);
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 1px 1px #ff0000;
+}
+
+.ticket-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff00009e;
+  width: 100%;
+  height: 5rem;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: top;
+}
+
+.ticket-btn:hover::after {
+  transform: scale(1);
+  transform-origin: bottom;
+}
+
+.show-now-card-1 {
+  width: 30rem;
+  height: 40rem;
+  background-image: linear-gradient(to top left, #2525252a, #00000070),
+    url(../img/arrow-poster-v2-107288.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  right: 50rem;
+  top: 13rem;
+  box-shadow: 0 2px 2px #000000a7;
+}
+
+.show-now-text-1 {
+  font-size: 5rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  position: absolute;
+  right: 28rem;
+  top: 13rem;
+}
+
+.show-now-p1-1 {
+  position: absolute;
+  right: 10rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 1.5rem;
+  width: 30rem;
+  right: 18rem;
+  top: 28rem;
+}
+
+.show-now-p2-1 {
+  position: absolute;
+  right: 10rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 1.5rem;
+  width: 30rem;
+  right: 18rem;
+  top: 36rem;
+}
+
+.show-now-p3-1 {
+  position: absolute;
+  right: 10rem;
+  color: #eeeeee;
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 1.5rem;
+  width: 30rem;
+  right: 18rem;
+  top: 39rem;
+}
+
+.The {
+  font-size: 3rem;
+}
+
+.ticket-btn-1 {
+  color: #eeeeee;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+
+  position: absolute;
+  top: 46rem;
+  right: 29.5rem;
+
+  padding: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(#252525, #252525);
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 1px 1px #1e6815;
+}
+
+.ticket-btn-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1e6815;
+  width: 100%;
+  height: 5rem;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: top;
+}
+
+.ticket-btn-1:hover::after {
+  transform: scale(1);
+  transform-origin: bottom;
+}
+
+#News {
+  height: 220vh;
+  background-image: linear-gradient(to bottom left, #000000e9, #000000),
+    url(../img/batDC.jpg);
+}
+
+.news-loop {
+  font-size: 10rem;
+  color: #25252535;
+  font-family: "Anek Bangla", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -16rem;
+  line-height: 10rem;
+  z-index: -1;
+}
+
+.news-container {
+  background-color: #000000;
+  height: 180vh;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.news-container-1 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  border-radius: 1px;
+}
+
+.img-news-1 {
+  width: 40rem;
+  object-fit: cover;
+  object-position: bottom right;
+  transition: all 0.4s;
+}
+
+.news-1-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-news-c1 {
+  position: absolute;
+  bottom: 0;
+  background-color: #bb86fcf9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-1-1:hover .text-news-c1 {
+  height: 100%;
+}
+
+.news-1-1:hover .img-news-1 {
+  transform: scale(1.1);
+}
+
+.text-news-1 {
+  color: #121212;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.text-news-p-1 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.news-1-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-news-2 {
+  width: 80rem;
+  object-fit: cover;
+  object-position: bottom right;
+  transition: all 0.4s;
+}
+
+.text-news-c2 {
+  position: absolute;
+  bottom: 0;
+  background-color: #03dac5f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-1-2:hover .text-news-c2 {
+  height: 100%;
+}
+
+.news-1-2:hover .img-news-2 {
+  transform: scale(1.1);
+}
+
+.text-news-2 {
+  color: #250963;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+
+  padding: 2rem;
+}
+
+.text-news-p-2 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+/**********/
+
+.news-container-2 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-radius: 1px;
+}
+
+.img-news-3 {
+  width: 60rem;
+  object-fit: cover;
+  object-position: top left;
+  transition: all 0.4s;
+}
+
+.news-2-3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-news-c3 {
+  position: absolute;
+  bottom: 0;
+  background-color: #3700b3f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-2-3:hover .text-news-c3 {
+  height: 100%;
+}
+
+.news-2-3:hover .img-news-3 {
+  transform: scale(1.1);
+}
+
+.text-news-3 {
+  color: #03dac5f9;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.text-news-p-3 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.news-2-4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-news-4 {
+  width: 40rem;
+  object-fit: cover;
+  object-position: bottom right;
+  transition: all 0.4s;
+}
+
+.text-news-c4 {
+  position: absolute;
+  bottom: 0;
+  background-color: #121212f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-2-4:hover .text-news-c4 {
+  height: 100%;
+}
+
+.news-2-4:hover .img-news-4 {
+  transform: scale(1.1);
+}
+
+.text-news-4 {
+  color: #03dac5f9;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+
+  padding: 2rem;
+}
+
+.text-news-p-4 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.img-news-5 {
+  width: 45rem;
+  object-fit: cover;
+  object-position: top left;
+  transition: all 0.4s;
+}
+
+.news-2-5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-news-c5 {
+  position: absolute;
+  bottom: 0;
+  background-color: #0b766cf9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-2-5:hover .text-news-c5 {
+  height: 100%;
+}
+
+.news-2-5:hover .img-news-5 {
+  transform: scale(1.1);
+}
+
+.text-news-5 {
+  color: #250963;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.text-news-p-5 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.news-container-3 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  margin-top: 3rem;
+  border-radius: 1px;
+}
+
+.img-news-6 {
+  width: 200rem;
+  object-fit: cover;
+  object-position: 50%;
+  transition: all 0.4s;
+}
+
+.news-3-6 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-news-c6 {
+  position: absolute;
+  bottom: 0;
+  background-color: #252525f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-3-6:hover .text-news-c6 {
+  height: 100%;
+}
+
+.news-3-6:hover .img-news-6 {
+  transform: scale(1.1);
+}
+
+.text-news-6 {
+  color: #9adcff;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.text-news-p-6 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.news-container-4 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  margin-top: 3.7rem;
+  border-radius: 1px;
+}
+
+.img-news-7 {
+  width: 30rem;
+  object-fit: cover;
+  object-position: 50%;
+  transition: all 0.4s;
+}
+
+.news-4-7 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-news-c7 {
+  position: absolute;
+  bottom: 0;
+  background-color: #252525f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-4-7:hover .text-news-c7 {
+  height: 100%;
+}
+
+.news-4-7:hover .img-news-7 {
+  transform: scale(1.1);
+}
+
+.text-news-7 {
+  color: #ffbde6;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.text-news-p-7 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.news-4-8 {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-news-8 {
+  width: 40rem;
+  object-fit: cover;
+  object-position: bottom right;
+  transition: all 0.4s;
+}
+
+.text-news-c8 {
+  position: absolute;
+  bottom: 0;
+  background-color: #252525f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-4-8:hover .text-news-c8 {
+  height: 100%;
+}
+
+.news-4-8:hover .img-news-8 {
+  transform: scale(1.1);
+}
+
+.text-news-8 {
+  color: #8d8daa;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+
+  padding: 2rem;
+}
+
+.text-news-p-8 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.img-news-9 {
+  width: 65rem;
+  object-fit: cover;
+  object-position: top left;
+  transition: all 0.4s;
+}
+
+.news-4-9 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-news-c9 {
+  position: absolute;
+  bottom: 0;
+  background-color: #252525f9;
+  height: 60px;
+  width: 100%;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+}
+
+.news-4-9:hover .text-news-c9 {
+  height: 100%;
+}
+
+.news-4-9:hover .img-news-9 {
+  transform: scale(1.1);
+}
+
+.text-news-9 {
+  color: #ff9100;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  bottom: 0;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.text-news-p-9 {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+#char {
+  height: 365vh;
+
+  background-image: linear-gradient(to bottom left, #000000e9, #000000),
+    url(../img/batDC.jpg);
+}
+
+.char-container {
+  background-color: #000000;
+  height: 250vh;
+  width: 95%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.char-container-1 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+}
+
+.img-char-1 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.4s;
+}
+
+.logo-hero {
+  width: 12rem;
+  height: 10rem;
+  position: absolute;
+  position: absolute;
+  left: 9rem;
+  top: 13rem;
+}
+
+.char-1-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-char-c1 {
+  position: absolute;
+  bottom: 0;
+  background-color: #001f6ceb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-1-1:hover .text-char-c1 {
+  width: 100%;
+}
+
+.char-1-1:hover .img-char-1 {
+  transform: scale(1.1);
+}
+
+.char-1-1:hover .text-char-p-1 {
+}
+
+.text-char-1 {
+  color: #ff0000;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+
+  z-index: 2000;
+  position: absolute;
+  left: 15rem;
+  top: 9rem;
+  transform: translate(-50%, -50%);
+  line-height: 10rem;
+}
+
+.text-char-p-1 {
+  width: 90rem;
+  font-size: 2rem;
+
+  z-index: 1;
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.char-container-2 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+  margin-top: 2rem;
+}
+
+.img-char-2 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.4s;
+}
+
+.char-2-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-char-c2 {
+  position: absolute;
+  bottom: 0;
+  background-color: #1b1a17eb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-2-2:hover .text-char-c2 {
+  width: 100%;
+}
+
+.char-2-2:hover .img-char-2 {
+  transform: scale(1.1);
+}
+
+.char-2-2:hover .text-char-p-2 {
+}
+
+.text-char-2 {
+  color: #ffd523;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+
+  z-index: 2000;
+  position: absolute;
+  left: 15rem;
+  top: 9rem;
+  transform: translate(-50%, -50%);
+  line-height: 10rem;
+}
+
+.bat-logo {
+  height: 10rem;
+  width: 10rem;
+}
+
+.text-char-p-2 {
+  width: 90rem;
+  font-size: 2rem;
+
+  z-index: 1;
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.char-container-3 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+  margin-top: 3rem;
+}
+
+.img-char-3 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: 2fr;
+  transition: all 0.4s;
+}
+
+.char-3-3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-char-c3 {
+  position: absolute;
+  bottom: 0;
+  background-color: #3f6cb8eb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-3-3:hover .text-char-c3 {
+  width: 100%;
+}
+
+.char-3-3:hover .img-char-3 {
+  transform: scale(1.1);
+}
+
+.char-3-3:hover .text-char-p-3 {
+}
+
+.text-char-3 {
+  color: #ecc466;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+
+  z-index: 2000;
+  position: absolute;
+  left: 7rem;
+  top: 4rem;
+
+  line-height: 5rem;
+}
+
+.wonder-logo {
+  height: 8rem;
+  width: 15rem;
+  top: 17rem;
+  left: 8rem;
+}
+
+.text-char-p-3 {
+  width: 90rem;
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.char-container-4 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+  margin-top: 4rem;
+}
+
+.img-char-4 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: top right;
+  transition: all 0.4s;
+}
+
+.char-4-4 {
+  position: relative;
+  overflow: hidden;
+}
+
+/*  E1E0E1//DE0808//949FAD*/
+.text-char-c4 {
+  position: absolute;
+  bottom: 0;
+  background-color: #706381eb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-4-4:hover .text-char-c4 {
+  width: 100%;
+}
+
+.char-4-4:hover .img-char-4 {
+  transform: scale(1.1);
+}
+
+.char-4-4:hover .text-char-p-4 {
+}
+
+.text-char-4 {
+  color: #bbbbbb;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  z-index: 2000;
+  position: absolute;
+  left: 7rem;
+  top: 6rem;
+  line-height: 5rem;
+}
+
+.cyborg-logo {
+  height: 10rem;
+  width: 10rem;
+  top: 14rem;
+  left: 10rem;
+}
+
+.text-char-p-4 {
+  width: 90rem;
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.char-container-5 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+  margin-top: 4rem;
+}
+
+.img-char-5 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: top right;
+  transition: all 0.4s;
+}
+
+.char-5-5 {
+  position: relative;
+  overflow: hidden;
+}
+
+/*  E1E0E1//DE0808//949FAD*/
+.text-char-c5 {
+  position: absolute;
+  bottom: 0;
+  background-color: #ab0020eb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-5-5:hover .text-char-c5 {
+  width: 100%;
+}
+
+.char-5-5:hover .img-char-5 {
+  transform: scale(1.1);
+}
+
+.char-5-5:hover .text-char-p-5 {
+}
+
+.text-char-5 {
+  color: #fffc7b;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  z-index: 2000;
+  position: absolute;
+  left: 7rem;
+  top: 6rem;
+  line-height: 5rem;
+}
+
+.flash-logoo {
+  height: 10rem;
+  width: 15rem;
+  top: 14rem;
+  left: 6rem;
+}
+
+.text-char-p-5 {
+  width: 90rem;
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.char-container-6 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+  margin-top: 4rem;
+}
+
+.img-char-6 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: top right;
+  transition: all 0.4s;
+}
+
+.char-6-6 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-char-c6 {
+  position: absolute;
+  bottom: 0;
+  background-color: #015f40eb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-6-6:hover .text-char-c6 {
+  width: 100%;
+}
+
+.char-6-6:hover .img-char-6 {
+  transform: scale(1.1);
+}
+
+.text-char-6 {
+  color: #32363d;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  z-index: 2000;
+  position: absolute;
+  left: 7rem;
+  top: 6rem;
+  line-height: 5rem;
+}
+
+.green-logo {
+  height: 8rem;
+  width: 12rem;
+  top: 17rem;
+  left: 8rem;
+}
+
+.text-char-p-6 {
+  width: 90rem;
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 2rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.char-container-7 {
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+  flex-shrink: 1;
+  margin-top: 4rem;
+}
+
+.img-char-7 {
+  width: 300rem;
+  object-fit: cover;
+  object-position: top right;
+  transition: all 0.4s;
+}
+
+.char-7-7 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-char-c7 {
+  position: absolute;
+  bottom: 0;
+  background-color: #00e2e7eb;
+  height: 100%;
+  width: 30rem;
+  transition: all 0.4s;
+  line-height: 2rem;
+  z-index: 200;
+  text-align: left;
+  overflow: hidden;
+}
+
+.char-7-7:hover .text-char-c7 {
+  width: 100%;
+}
+
+.char-7-7:hover .img-char-7 {
+  transform: scale(1.1);
+}
+
+.text-char-7 {
+  color: #252525;
+  font-size: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  z-index: 2000;
+  position: absolute;
+  left: 7rem;
+  top: 6rem;
+  line-height: 5rem;
+}
+
+.green-logo {
+  height: 8rem;
+  width: 12rem;
+  top: 17rem;
+  left: 8rem;
+}
+
+.text-char-p-7 {
+  width: 90rem;
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 2rem;
+  padding-left: 30rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000000;
+}
+
+#comics {
+  height: 250rem;
+  background-image: linear-gradient(to bottom left, #000000e9, #000000),
+    url(../img/batDC.jpg);
+}
+
+.comic-container {
+  background-color: #000000;
+  height: 150rem;
+  width: 95%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.comic-container-1 {
+  display: flex;
+  height: 40rem;
+  gap: 4rem;
+  flex-shrink: 1;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+.img-comic-1 {
+  width: 40vw;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.4s;
+  border-radius: 1px;
+}
+
+.comic-1-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-comic-c1 {
+  position: absolute;
+
+  bottom: 0;
+  background-color: #252525f9;
+  height: 100%;
+  width: 0rem;
+  transition: all 0.4s;
+
+  z-index: 200;
+
+  text-align: left;
+  overflow: hidden;
+}
+
+.comic-1-1:hover .text-comic-c1 {
+  width: 100%;
+}
+
+.comic-1-1:hover .img-comic-1 {
+  transform: scale(1.1);
+}
+
+.comic-1-1:hover .text-comic-p-1 {
+}
+
+.text-comic-1 {
+  color: #0476f2;
+  font-size: 3rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+
+  position: absolute;
+  left: 12rem;
+  top: 6rem;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+}
+
+.text-comic-p-1 {
+  width: 20rem;
+  font-size: 1.7rem;
+
+  z-index: 1;
+  position: absolute;
+  bottom: 9rem;
+  left: 2rem;
+
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eeeeee;
+}
+
+.btn-comic {
+  border: 0;
+
+  height: 3rem;
+  width: 10rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #0476f2;
+  transition: all 0.2s;
+}
+
+.btn-comic:hover {
+  background-color: #0477f2b5;
+}
+
+.comic-read {
+  text-decoration: none;
+  color: #252525;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.comic-container-2 {
+  display: flex;
+  height: 40rem;
+  gap: 4rem;
+  flex-shrink: 1;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+
+.comic-container-3 {
+  display: flex;
+  height: 40rem;
+  gap: 4rem;
+  flex-shrink: 1;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+
+#footer {
+  height: 80vh;
+
+  background-image: linear-gradient(to bottom left, #252525f3, #252525),
+    url(../img/dc-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.back-logo {
+  width: 20rem;
+  height: 40rem;
+  display: inline-block;
+}
+
+.footer-logo {
+  width: 40rem;
+  height: 40rem;
+  transform: rotate(-25deg);
+  position: absolute;
+  right: 15rem;
+  top: 5rem;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.container-footer {
+  display: flex;
+  gap: 70rem;
+}
+
+.footer-text-box {
+  position: absolute;
+  left: 10rem;
+  width: 30rem;
+  bottom: 18rem;
+  color: #eeeeee;
+  display: inline-block;
+}
+
+.footer-text-box2 {
+  position: absolute;
+  left: 20rem;
+  width: 10rem;
+  bottom: 0;
+  display: inline-block;
+}
+
+.footer-text-box3 {
+  position: absolute;
+  left: 33rem;
+  width: 5rem;
+  bottom: -7rem;
+  display: inline-block;
+}
+
+.char-list {
+  list-style: none;
+  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.li-sites {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.footer-header-char {
+  font-size: 1.7rem;
+  color: #eeeeee;
+  position: absolute;
+  position: absolute;
+  bottom: 15rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-header-char2 {
+  font-size: 1.7rem;
+  color: #eeeeee;
+  position: absolute;
+  position: absolute;
+  bottom: 12rem;
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-header-char3 {
+  font-size: 1.7rem;
+  color: #eeeeee;
+  position: absolute;
+  position: absolute;
+  bottom: 13rem;
+
+  font-family: "Anek Bangla", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.social-logo {
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer-header-r {
+  font-size: 2rem;
+  color: #eeeeee;
+  position: absolute;
+  line-height: 4rem;
+  font-family: "Anek Bangla", sans-serif;
+  margin-top: 5rem;
+}
+
+@keyframes nav-back {
+  0% {
+    opacity: 0;
+    transform: translateX(-100);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottom-top {
+  0% {
+    opacity: 0;
+    transform: translateY(100);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-100);
+  }
+}

@@ -1,0 +1,807 @@
+@media only screen and (device-width: 390px) {
+    body #Movies {
+        height: 400vh !important;
+    }
+
+    body #News {
+        height: 300vh !important;
+    }
+
+    body #char {
+        height: 220vh;
+    }
+
+    body .text-char-p-1 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-2 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-3 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-4 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-5 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-6 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-7 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+
+    body .comic-container-1 {}
+
+    .img-comic-1 {
+        width: 23rem;
+    }
+
+    body #comics {
+        height: 390vh;
+    }
+
+
+}
+
+@media only screen and (device-width: 414px) {
+    body #Movies {
+        height: 380vh !important;
+    }
+
+    body #News {
+        height: 300vh !important;
+    }
+
+    body #char {
+        height: 220vh;
+    }
+
+    body .text-char-p-1 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-2 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-3 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-4 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-5 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-6 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .text-char-p-7 {
+        top: 1rem;
+        width: 22rem;
+    }
+
+    body .comic-container-1 {}
+
+    .img-comic-1 {
+        width: 23rem;
+    }
+
+    body #comics {
+        height: 390vh;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 42.5%;
+    }
+
+    body .nav-list {
+        margin-left: 6rem;
+    }
+
+    .img-top {
+
+
+        min-height: 50vh;
+        min-width: 100%;
+
+    }
+
+    body .img-top-1 {
+
+
+
+        min-width: 100%;
+        object-position: 70%;
+    }
+
+    .img-top-2 {
+        display: none;
+    }
+
+
+    .img-bottom {
+        min-width: 100%;
+        min-height: 20vh;
+        position: absolute;
+        bottom: 11rem;
+        margin-top: 0rem;
+
+    }
+
+    body .img-top-4 {
+        object-position: 8%;
+    }
+
+    .img-top-5 {
+        display: none;
+    }
+
+    body .Header-1 {
+        font-size: 7rem;
+        left: 1px;
+
+    }
+
+    body .Header-4 {
+        bottom: 20rem;
+    }
+
+    body .img-top-text-1 {
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+
+    .Header-3 {
+        display: none;
+    }
+
+    .Header-2 {
+        display: none;
+    }
+
+    body #Movies {
+        height: 480vh;
+    }
+
+    body .top-rate-movies {
+        position: absolute;
+        top: 70rem;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+
+
+    }
+
+    body .top-rate-col-1 {
+        display: block;
+        margin-bottom: 5rem;
+        width: 30rem;
+        height: 70rem;
+        transform-origin: initial;
+
+    }
+
+    body .top-rate-col-1:hover {
+        transform-origin: initial;
+    }
+
+    body .top-rate-col-2 {
+        display: block;
+        display: block;
+        margin-bottom: 5rem;
+        width: 30rem;
+        height: 70rem;
+
+    }
+
+
+
+    body .top-rate-col-3 {
+        display: block;
+        display: block;
+        margin-bottom: 5rem;
+        width: 30rem;
+        height: 70rem;
+        transform-origin: initial;
+    }
+
+    body .top-rate-col-3:hover {
+        transform-origin: initial;
+    }
+
+    body .header-col {
+        font-size: 7rem;
+        height: 25%;
+    }
+
+
+
+    body .imdb {
+        margin-top: 5.8rem;
+
+    }
+
+    body .rate-text {
+        font-size: 2.4rem;
+    }
+
+
+
+
+
+    body .header-movies-1 {
+        margin-left: 21rem;
+        color: #06FF00;
+
+    }
+
+    body .up-coming-movies {
+        margin-left: 0rem;
+        border: .5px solid #000000;
+
+    }
+
+
+    body .movies-row-1 {
+        transform-origin: initial;
+
+    }
+
+
+
+    body .movies-row-2 {
+        transform-origin: initial;
+
+
+    }
+
+    body .movies-row-3 {
+        transform-origin: initial;
+    }
+
+    body .movies-row-4 {
+        transform-origin: initial;
+    }
+
+    body .header-movies-2 {
+        margin-left: 0;
+        position: absolute;
+        margin-top: 78rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    body .show-now {
+
+        margin-top: 270rem;
+
+
+    }
+
+
+    body .header-movies-3 {
+        font-size: 4rem;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        top: -10rem;
+    }
+
+    body .show-now-card {
+        top: 20rem;
+        left: 2%;
+    }
+
+    body .show-now-p1 {
+        top: 35rem;
+        left: 57%;
+        font-size: 2rem;
+        width: 20rem;
+    }
+
+    body .show-now-p2 {
+
+        display: none;
+    }
+
+    body .show-now-p3 {
+        top: 50rem;
+        left: 57%;
+        font-size: 2rem;
+        width: 20rem;
+    }
+
+    body .ticket-btn {
+        top: 63rem;
+        width: 30rem;
+        left: 23%;
+        height: 5rem;
+        text-align: center;
+        line-height: 5rem;
+        font-size: 5rem;
+        padding: 1rem;
+    }
+
+
+
+    body .show-now-text {
+        top: 20rem;
+        left: 57%;
+    }
+
+    body .show-now-card-1 {
+        top: 80rem;
+        left: 2%;
+    }
+
+    body .show-now-text-1 {
+        top: 80rem;
+        left: 57%;
+    }
+
+    body .show-now-p2-1 {
+        display: none;
+    }
+
+    body .show-now-p1-1 {
+
+        top: 95rem;
+        left: 57%;
+        font-size: 2rem;
+        width: 20rem;
+
+    }
+
+    body .show-now-p3-1 {
+        top: 110rem;
+        left: 57%;
+        font-size: 2rem;
+        width: 20rem;
+    }
+
+    body .ticket-btn-1 {
+        top: 123rem;
+        width: 30rem;
+        left: 23%;
+        height: 5rem;
+        text-align: center;
+        line-height: 5rem;
+        font-size: 5rem;
+        padding: 1rem;
+    }
+
+    #News {
+        height: 370rem;
+    }
+
+    .news-container {
+        height: 100rem;
+
+
+    }
+
+    .news-container-1 {
+        flex-direction: column;
+        height: 70rem;
+        gap: 4rem;
+    }
+
+    .text-news-c1 {
+        width: 100%;
+
+
+    }
+
+    .text-news-1 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-1 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+    .img-news-1 {
+        object-position: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-news-c2 {
+        width: 100%;
+
+        transition: all .4s;
+
+    }
+
+    .news-1-2:hover .text-news-c2 {
+        overflow-y: scroll;
+    }
+
+    .text-news-2 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+
+    }
+
+    .text-news-p-2 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+
+    }
+
+    .img-news-2 {
+        object-position: 50%;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .news-container-2 {
+        flex-direction: column;
+        height: 110rem;
+        gap: 4rem;
+
+    }
+
+    .text-news-c3 {
+        width: 100%;
+
+
+    }
+
+    .text-news-3 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-3 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+    .img-news-3 {
+        object-position: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-news-c4 {
+        width: 100%;
+
+
+    }
+
+    .text-news-4 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-4 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+    .img-news-4 {
+        object-position: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-news-c5 {
+        width: 100%;
+
+
+    }
+
+    .text-news-5 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-5 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+
+
+    .img-news-5 {
+        object-position: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .news-container-3 {
+        flex-direction: column;
+        height: 35rem;
+        gap: 4rem;
+
+    }
+
+    .text-news-c6 {
+        width: 100%;
+    }
+
+    .news-3-6:hover .text-news-c6 {
+        overflow-y: scroll;
+    }
+
+    .text-news-6 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-6 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+    .img-news-6 {
+        object-position: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .news-container-4 {
+        flex-direction: column;
+        height: 120rem;
+        gap: 4rem;
+
+    }
+
+    .text-news-c7 {
+        width: 100%;
+    }
+
+    .news-4-7:hover .text-news-c7 {
+        overflow-y: scroll;
+    }
+
+    .text-news-7 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-7 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+    .img-news-7 {
+        object-position: top;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-news-c8 {
+        width: 100%;
+    }
+
+    .news-4-8:hover .text-news-c8 {
+        overflow-y: scroll;
+    }
+
+    .text-news-8 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-8 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+    .img-news-8 {
+        object-position: top;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-news-c9 {
+        width: 100%;
+    }
+
+    .news-4-9:hover .text-news-c9 {
+        overflow-y: scroll;
+    }
+
+    .text-news-9 {
+        margin-bottom: 1.8rem;
+        margin-top: 1.3rem;
+        font-size: 2.8rem;
+
+    }
+
+    .text-news-p-9 {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+
+
+
+    .img-news-9 {
+        object-position: top;
+        height: 100%;
+        width: 100%;
+    }
+
+    #char {
+        height: 260vh;
+    }
+
+    .char-container {
+        height: 100rem;
+    }
+
+    .text-char-p-1 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c1 {}
+
+    .char-1-1:hover .text-char-c1 {
+        overflow-y: scroll;
+    }
+
+    .text-char-p-2 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c2 {}
+
+    .char-2-2:hover .text-char-c2 {
+        overflow-y: scroll;
+    }
+
+
+    .text-char-p-3 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c3 {}
+
+    .char-3-3:hover .text-char-c3 {
+        overflow-y: scroll;
+    }
+
+    .text-char-p-4 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c4 {}
+
+    .char-4-4:hover .text-char-c4 {
+        overflow-y: scroll;
+    }
+
+    .text-char-p-5 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c5 {}
+
+    .char-5-5:hover .text-char-c5 {
+        overflow-y: scroll;
+    }
+
+    .text-char-p-6 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c6 {}
+
+    .char-6-6:hover .text-char-c6 {
+        overflow-y: scroll;
+    }
+
+    .text-char-p-7 {
+        top: 1rem;
+        width: 20rem;
+    }
+
+    .text-char-c7 {}
+
+    .char-7-7:hover .text-char-c7 {
+        overflow-y: scroll;
+    }
+
+
+
+    #comics {
+        height: 490rem;
+    }
+
+    .comic-container-1 {
+        flex-shrink: 1;
+        flex-wrap: wrap;
+    }
+
+    .text-comic-p-1 {
+        width: 18rem;
+        font-size: 1.5rem;
+    }
+
+    .comic-pt {
+        margin-top: 50rem;
+    }
+
+
+
+
+
+    #footer {}
+
+    .footer-text-box3 {}
+}
